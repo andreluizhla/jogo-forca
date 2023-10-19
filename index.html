@@ -1,59 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progressao Aritmetica</title>
-    <style type="text/css" media="all">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Progressao Aritmetica</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Jogo da Forca</h1>
+        </header>
 
-        body {
-            background-color: rgb(70, 140, 215);
-            font: normal 15pt Arial;
-        }
+        <section>
+            <div>
+                <img src="images/forca.gif" alt="Forca" id="gif"/>
+            </div>
 
-        header {
-            color: white;
-            text-align: center;
-        }
-
-        section {
-            background-color: white;
-            border-radius: 10px;
-            padding: 15px;
-            width: 300px;
-            margin: auto;
-            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        footer {
-            color: white;
-            text-align: center;
-            font-style: italic;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Jogo da Forca</h1>
-    </header>
-
-    <section>
-        <div>
-            <img src="images/forca.gif" alt="Forca" />
-        </div>
-
-        <p>
-            Digite o seu chute <input type="text" name="chute" id="chute">
-        </p>
-        
-        <input type="button" name="enviar" id="enviar" value="Enviar" onclick="verificar()" />
-        
-        <div id="res">
-
-        </div>
-</section>
-<script>
-    var 
-</script>
-</body>
+            <div id="indice">
+                <h2>Escolha um tema:</h2>
+                <ul>
+                    <li><a href="jogos/jogos.html">Jogos</a></li>
+                    <li><a href="computador/computador.html">Computador</a></li>
+                    <li><a href="comida/comida.html">Comida</a></li>
+                    <li><a href="esportes/esportes.html">Esportes</a></li>
+                    <li><a href="animais/animais.html">Animais</a></li>
+                    <li><a href="cidades/cidades.html">Cidades</a></li>
+                    <li><a href="animes/animes.html">Animes</a></li>
+                    <li><a href="musica/musica.html">Instrumentos Musicais</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>Feito por &copy;André</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>

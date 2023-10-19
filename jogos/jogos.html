@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca: </title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Forca</h1>
+    </header>
+    <section>
+        <div>
+            <img src="../images/frame-1.gif" alt="Forca" id="forca">
+        </div>
+        
+        <div id="keyboard">
+            <div class="row">
+                <div class="key" onclick="keyClicked('1')">1</div>
+                <div class="key" onclick="keyClicked('2')">2</div>
+                <div class="key" onclick="keyClicked('3')">3</div>
+                <div class="key" onclick="keyClicked('4')">4</div>
+                <div class="key" onclick="keyClicked('5')">5</div>
+                <div class="key" onclick="keyClicked('6')">6</div>
+                <div class="key" onclick="keyClicked('7')">7</div>
+                <div class="key" onclick="keyClicked('8')">8</div>
+                <div class="key" onclick="keyClicked('9')">9</div>
+                <div class="key" onclick="keyClicked('0')">0</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="keyClicked('Q')">Q</div>
+                <div class="key" onclick="keyClicked('W')">W</div>
+                <div class="key" onclick="keyClicked('E')">E</div>
+                <div class="key" onclick="keyClicked('R')">R</div>
+                <div class="key" onclick="keyClicked('T')">T</div>
+                <div class="key" onclick="keyClicked('Y')">Y</div>
+                <div class="key" onclick="keyClicked('U')">U</div>
+                <div class="key" onclick="keyClicked('I')">I</div>
+                <div class="key" onclick="keyClicked('O')">O</div>
+                <div class="key" onclick="keyClicked('P')">P</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="keyClicked('A')">A</div>
+                <div class="key" onclick="keyClicked('S')">S</div>
+                <div class="key" onclick="keyClicked('D')">D</div>
+                <div class="key" onclick="keyClicked('F')">F</div>
+                <div class="key" onclick="keyClicked('G')">G</div>
+                <div class="key" onclick="keyClicked('H')">H</div>
+                <div class="key" onclick="keyClicked('J')">J</div>
+                <div class="key" onclick="keyClicked('K')">K</div>
+                <div class="key" onclick="keyClicked('L')">L</div>
+            </div>
+            <div class="row">
+                <div class="key" onclick="keyClicked('Z')">Z</div>
+                <div class="key" onclick="keyClicked('X')">X</div>
+                <div class="key" onclick="keyClicked('C')">C</div>
+                <div class="key" onclick="keyClicked('V')">V</div>
+                <div class="key" onclick="keyClicked('B')">B</div>
+                <div class="key" onclick="keyClicked('N')">N</div>
+                <div class="key" onclick="keyClicked('M')">M</div>
+            </div>
+        </div>
+        <div id="output">Teclas clicadas:</div>
+        <script src="../script.js">
+            let jogos = ["The Legend of Zelda: Breath of the Wild", "Red Dead Redemption 2", "The Witcher 3: Wild Hunt", "Super Mario Odyssey", "Dark Souls", "Grand Theft Auto", "Overwatch", "Minecraft", "Fortnite", "Call of Duty: Warzone", "League of Legends", "Counter-Strike: Global Offensive", "Cyberpunk 2077", "Doom Eternal", "Sekiro: Shadows Die Twice", "Fallout 4", "Resident Evil Village", "FIFA 22", "The Elder Scrolls V: Skyrim", "Assassin's Creed"]
+            
+            let letras = []
+            let erros = 1
+            let aleatorio = Math.floor(Math.random() * jogos.length)
+            let jogo = jogos[aleatorio]
+            let forca = document.getElementById('forca')
+
+            function keyClicked(key) {
+                if (letras.indexOf(key) == -1){
+                    letras.push(key)
+                } else {
+                    
+                    forca.src = `../images/frame-${erros}`
+                }
+            }
+
+
+            function verificar(){
+                if (letras.indexOf())
+            }
+        </script>
+    </section>
+</body>
+</html>
